@@ -1,0 +1,1 @@
+# Script is used to display different pattern and animations on a Joy-It 64x64 matrix display
