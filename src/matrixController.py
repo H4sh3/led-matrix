@@ -169,5 +169,5 @@ class MatrixController(SampleBase):
                 new_mode = Dots.MODES[random.randint(0,len(Dots.MODES)-1)]
                 while new_mode == self.active_mode:
                    new_mode = Dots.MODES[random.randint(0,len(Dots.MODES)-1)]
-                #self.activate_mode(new_mode)
+                self.activate_mode(new_mode)
                 self.cnt = 0

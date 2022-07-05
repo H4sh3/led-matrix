@@ -90,12 +90,12 @@ class SpiralDot(DotInterface):
         self.x += random.randint(-r,r)
 
     def update(self):
-        x,y = rotate((self.x,self.y),CENTER_P,math.radians(9))
+        x,y = rotate((self.x,self.y),CENTER_P,math.radians(4))
         self.x = x
         self.y = y
 
         # move to center
-        step = 0.15
+        step = 0.35
         self.x += step if self.x <= CENTER else -step
         self.y += step if self.y <= CENTER else -step
 
