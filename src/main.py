@@ -2,7 +2,8 @@
 # Display a runtext with double-buffering.
 import time
 
-from matrixController import CENTER_MODE, RAIN_MODE, SPIRAL_MODE, SPLASH_MODE, MatrixController
+from matrixController import MatrixController
+import dots as Dots
 
 # Twitch API
 import twitch
@@ -26,19 +27,19 @@ if __name__ == "__main__":
             return
 
         if "!splash" == message.text:
-            matrixController.activate_mode(SPLASH_MODE)
+            matrixController.activate_mode(Dots.SPLASH_MODE)
             return
 
         if "!center" == message.text:
-            matrixController.activate_mode(CENTER_MODE)
+            matrixController.activate_mode(Dots.CENTER_MODE)
             return
 
         if "!spiral" == message.text:
-            matrixController.activate_mode(SPIRAL_MODE)
+            matrixController.activate_mode(Dots.SPIRAL_MODE)
             return
 
         if "!rain" == message.text:
-            matrixController.activate_mode(RAIN_MODE)
+            matrixController.activate_mode(Dots.RAIN_MODE)
             return
 
         # not a command -> write as message to the matrix
